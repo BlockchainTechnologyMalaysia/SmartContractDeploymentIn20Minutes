@@ -1,6 +1,7 @@
  
 
  A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a    contract. Smart contracts allow the performance of credible transactions without third parties.
+ 
  SMART CONTRACT DEPLOYMENT WINDOWS DEMO
 
 To deploy a new Smart Contract in Ethereum you have to follow the steps below:
