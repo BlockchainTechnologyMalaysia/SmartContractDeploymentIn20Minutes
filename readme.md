@@ -1,4 +1,4 @@
-#SMART CONTRACT DEPLOYMENT LINUX/UNIX DEMO
+###SMART CONTRACT DEPLOYMENT LINUX/UNIX DEMO
 
 To deploy a new Smart Contract in Ethereum you have to follow the steps below:
 
