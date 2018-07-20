@@ -70,7 +70,7 @@ Reset the privKey to the specific Private Key exported from Metamask.
 ```
        // Copy the smart contract address somewhere
 9. To interact with your smart contract execute the command below :
-````
+```
 > metaCoin.deployed().then(function(instance){token=instance})
 >token.getBalance("0xcD6ED2D088BD03441F3b00bE581c7f599675279c").then(function(res){bal=res})
 // token.getBalance("<your address>").then(function(res){bal=res})
