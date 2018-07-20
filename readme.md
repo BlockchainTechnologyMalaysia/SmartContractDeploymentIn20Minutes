@@ -67,16 +67,18 @@ Reset the privKey to the specific Private Key exported from Metamask.
 ```
        > compile
        > migrate --reset
-```
        // Copy the smart contract address somewhere
-9. To interact with your smart contract execute the command below :
 ```
-> metaCoin.deployed().then(function(instance){token=instance})
->token.getBalance("0xcD6ED2D088BD03441F3b00bE581c7f599675279c").then(function(res){bal=res})
-// token.getBalance("<your address>").then(function(res){bal=res})
-> bal.toNumber()
-// to send tokens to other smart contract
-> token.sendCoin("0x37f90f9BE74C6Af83e2eFA6A918ca5D38eB655e4",100)
-// token.sendCoin("<address of receiver>",<amount>)
-// Check balance of above mentioned address
+      
+9. To interact with your smart contract execute the command below :
+
+```
+    > metaCoin.deployed().then(function(instance){token=instance})
+    > token.getBalance("0xcD6ED2D088BD03441F3b00bE581c7f599675279c").then(function(res){bal=res})
+        // token.getBalance("<your address>").then(function(res){bal=res})
+    > bal.toNumber()
+        //to send tokens to other smart contract
+    > token.sendCoin("0x37f90f9BE74C6Af83e2eFA6A918ca5D38eB655e4",100)
+        // token.sendCoin("<address of receiver>",<amount>)
+        // Check balance of above mentioned address
 ```
