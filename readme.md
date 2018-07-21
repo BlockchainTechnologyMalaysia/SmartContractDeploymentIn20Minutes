@@ -86,16 +86,20 @@ To deploy a new Smart Contract in Ethereum you have to follow the steps below:
 1.  Install Prerequisites:
 Install Nodejs and NPM.
 In LINUX/UNIX : 
-`> sudo apt-get node`
-                        Cross Check 
-`> node -v
-> npm -v`
-      B.   Install Truffle Smart Contract Development package 
+```> sudo apt-get node```
+
+Cross Check 
+```
+> node -v
+> npm -v
+```
+
+B.   Install Truffle Smart Contract Development package 
                         On your system create a new working directory  and navigate to it on your cmd.
                         Test if the nvm and npm is correctly installed by typing node -v and npm -v   
                         respectively.
                         Install truffle globally using the command
-	`> npm install -g truffle`
+	```> npm install -g truffle```
 
   C. Install HDWallet Package     https://www.npmjs.com/package/truffle-hdwallet-provider
                    
