@@ -2,7 +2,7 @@
 
  A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a    contract. Smart contracts allow the performance of credible transactions without third parties.
  
- SMART CONTRACT DEPLOYMENT WINDOWS DEMO
+# SMART CONTRACT DEPLOYMENT WINDOWS DEMO
 
 To deploy a new Smart Contract in Ethereum you have to follow the steps below:
   
@@ -10,7 +10,7 @@ Install Prerequisites:
 Install Nodejs and NPM.
 In Windows OS download the executable installer from the official npm/nodejs website:   https://nodejs.org/en/
         
-                  b.   Install Truffle Smart Contract Development package 
+  b.   Install Truffle Smart Contract Development package 
                         On your system create a new working directory  and navigate to it on your cmd.
                         Test if the nvm and npm is correctly installed by typing node -v and npm -v   
                         respectively.
@@ -20,27 +20,27 @@ In Windows OS download the executable installer from the official npm/nodejs web
           2. Create infura rpc provider from the official website www.infura.io
                   Create your account at infura by entering email and choosing a password.
                      
-          3. Unbox the Metacoin project in your working directory using the command below:
-                         truffle unbox Metacoin
+  3. Unbox the Metacoin project in your working directory using the command below:
+                   ```      truffle unbox Metacoin```
           4. Install Metamask extension on your Internet Browser and create a new account.
                 Search for the extension on google. “Metamask Extension” or at https://metamask.io/
                 Request testnet ether from a rinkeby faucet https://faucet.rinkeby.io/
                                       
-          5. Export your seed words from the metamask wallet and copy it somewhere. 
+        5. Export your seed words from the metamask wallet and copy it somewhere. 
            
-          6. Initialize node modules 
+       6. Initialize node modules 
      On your working folder type the command on CMD:
-     npm install truffle-hdwallet-provider
+    ``` npm install truffle-hdwallet-provider```
 
 
 
 
-          7. Navigate to the file named truffle.js and open it on your text editor     
+   7. Navigate to the file named truffle.js and open it on your text editor     
 
 
 
   Paste the following code:
-const HDWalletProvider = require("truffle-hdwallet-provider");
+```const HDWalletProvider = require("truffle-hdwallet-provider");
 const MNEMONICS="your mnemonics"
 
 module.exports = {
@@ -53,16 +53,19 @@ networks: {
    }
   }
 };
+```
 Reset the MNEMONICS to the specific seed words exported from Metamask.
 
 8. Open cmd and navigate to your working directory to compile and deploy your code.
      For compiling use command:
-         truffle console --network rinkeby
+   ```      truffle console --network rinkeby```
      For deployment use Commands:
-        > compile
+ ```       > compile
         > migrate --reset
         // Copy the smart contract address somewhere
+```
 9. To interact with your smart contract execute the command below :
+```
 > metaCoin.deployed().then(function(instance){token=instance})
 >token.getBalance("0xcD6ED2D088BD03441F3b00bE581c7f599675279c").then(function(res){bal=res})
 // token.getBalance("<your address>").then(function(res){bal=res})
@@ -71,6 +74,7 @@ Reset the MNEMONICS to the specific seed words exported from Metamask.
 > token.sendCoin("0x37f90f9BE74C6Af83e2eFA6A918ca5D38eB655e4",100)
 // token.sendCoin("<address of receiver>",<amount>)
 // Check balance of above mentioned address
+```
 
 
 
@@ -83,8 +87,7 @@ Reset the MNEMONICS to the specific seed words exported from Metamask.
 
 
 
-
- SMART CONTRACT DEPLOYMENT LINUX/UNIX DEMO 
+# SMART CONTRACT DEPLOYMENT LINUX/UNIX DEMO 
 
 
 
